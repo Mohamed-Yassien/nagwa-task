@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../controllers/books_cubit.dart';
@@ -29,16 +28,31 @@ class SearchWidget extends StatelessWidget {
                 );
               },
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(
-                    horizontal: 10, vertical: 5),
+                contentPadding:
+                    EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                 hintText: 'Search',
                 hintStyle: TextStyle(
                   color: Colors.grey,
+                  fontSize: 14,
                 ),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(8),
                   borderSide: const BorderSide(
-                    width: 1,
+                    width: .5,
+                    color: Colors.grey,
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: const BorderSide(
+                    width: .5,
+                    color: Colors.indigo,
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: const BorderSide(
+                    width: .5,
                     color: Colors.grey,
                   ),
                 ),
@@ -55,10 +69,16 @@ class SearchWidget extends StatelessWidget {
                 search: searchController.text,
               );
             },
-            icon: CircleAvatar(
-              radius: 20,
+            icon: Container(
+              width: 45,
+              height: 45,
+              decoration: BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.circular(8),
+              ),
               child: Icon(
                 Icons.search_outlined,
+                color: Colors.white,
               ),
             ),
           ),
