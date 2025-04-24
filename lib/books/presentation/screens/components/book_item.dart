@@ -81,6 +81,7 @@ class BookItem extends StatelessWidget {
                         children: List.generate(
                           item.authors.length,
                           (i) => Chip(
+                            padding: EdgeInsets.all(2),
                             backgroundColor: Colors.grey.shade200,
                             label: FittedBox(
                               fit: BoxFit.scaleDown,

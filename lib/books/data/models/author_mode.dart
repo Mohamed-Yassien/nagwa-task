@@ -1,4 +1,4 @@
-import '../../domain/entities/authot_entity.dart';
+import '../../domain/entities/author_entity.dart';
 
 class AuthorModel extends AuthorEntity {
   const AuthorModel({

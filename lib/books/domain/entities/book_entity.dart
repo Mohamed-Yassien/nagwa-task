@@ -1,10 +1,20 @@
 import 'package:equatable/equatable.dart';
+import 'package:hive/hive.dart';
 
-import 'authot_entity.dart';
+import 'author_entity.dart';
+part 'book_entity.g.dart';
 
+
+
+@HiveType(typeId: 1)
 class BookEntity extends Equatable {
-  final String title, coverImage;
+  @HiveField(0)
+  final String title;
+    @HiveField(1)
+  final String coverImage;
+  @HiveField(2)
   final List<dynamic> summary;
+  @HiveField(3)
   final List<AuthorEntity> authors;
 
   const BookEntity({
@@ -22,5 +32,3 @@ class BookEntity extends Equatable {
         authors,
       ];
 }
-
-

@@ -22,3 +22,10 @@ class GetBooksErrorState extends BooksStates {
     required this.errorMessage,
   });
 }
+class GetBooksLoadMoreErrorState extends BooksStates {
+  final String errorMessage;
+
+  GetBooksLoadMoreErrorState({
+    required this.errorMessage,
+  });
+}

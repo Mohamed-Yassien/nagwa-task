@@ -1,3 +1,4 @@
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../books/data/datasource/books_datasource.dart';
@@ -11,8 +12,11 @@ final sl = GetIt.instance;
 class ServiceLocator {
   void init() {
     //CUBITS
+    sl.registerLazySingleton(() => Connectivity());
+
     sl.registerLazySingleton<BooksCubit>(
       () => BooksCubit(
+        sl(),
         sl(),
       ),
     );
@@ -32,6 +36,7 @@ class ServiceLocator {
     );
 
     //DATASOURCES
+
     sl.registerLazySingleton<BaseBooksDataSource>(
       () => BooksDataSource(),
     );
