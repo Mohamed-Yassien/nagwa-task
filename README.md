@@ -29,7 +29,7 @@ Ensure you have the following installed:
 ## 🔧 How to Build and Run
 
 1. **Clone the Repository**:
-   git clone https://github.com/Mohamed-Yassien/nagwa-task
+   git clone https://github.com/Mohamed-Yassien/nagwa-task -- you will find code in master branch
 2.   cd nagwa_task
 3.   flutter pub get
 4.   flutter packages pub run build_runner build --delete-conflicting-outputs
