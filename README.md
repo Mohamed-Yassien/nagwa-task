@@ -2,10 +2,17 @@
 
 A Flutter application that displays a list of books using
    * Clean Architecture principles.
-   *   It utilizes Cubit for state management.
+   *   flutter_bloc for using Cubit for state management.
    *   Dio for networking.
    *   Hive for local caching.
    *   rename  package for change application name and bundleId.
+   *   connectivity_plus for check internet connection state.
+   *   path_provider for access mobile locale storage.
+   *   get_it for dependency injection .
+   *   cached_network_image for cache images .
+   *   equatable for compare objects by their values instead of their references.
+   *   dartz for allowing you return two types in each function .
+   *   flutter_staggered_grid_view for using grid view with dynamic height based on content .
 
 ## 🚀 Getting Started
 
