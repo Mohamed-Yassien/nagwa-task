@@ -23,7 +23,7 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
    git clone https://github.com/Mohamed-Yassien/nagwa-task
-2. cd flutter-book-app
+2.   cd nagwa_task
 3.   flutter pub get
 4.   flutter packages pub run build_runner build --delete-conflicting-outputs
 5.   flutter run
