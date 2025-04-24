@@ -56,9 +56,7 @@ class BooksCubit extends Cubit<BooksStates> {
             booksList.addAll(r.books);
           }
           emit(
-            GetBooksSuccessState(
-              booksList: r.books,
-            ),
+            GetBooksSuccessState(),
           );
         },
       );
@@ -81,9 +79,7 @@ class BooksCubit extends Cubit<BooksStates> {
         }
 
         emit(
-          GetBooksSuccessState(
-            booksList: cached[page - 1].books,
-          ),
+          GetBooksSuccessState(),
         );
       } else {
         emit(
